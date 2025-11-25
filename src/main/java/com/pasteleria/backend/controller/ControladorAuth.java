@@ -11,7 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/v1/auth")
+@RequestMapping("/api/auth")
 @Tag(name = "Autenticación", description = "Endpoints para autenticación y gestión de tokens JWT")
 @CrossOrigin(origins = "*")
 public class ControladorAuth {

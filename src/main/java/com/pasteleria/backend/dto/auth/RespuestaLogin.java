@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
 @Data
 @Builder
 @NoArgsConstructor
@@ -18,5 +20,7 @@ public class RespuestaLogin {
     private String nombre;
     private String email;
     private String rol;
+    private String cupon;
+    private LocalDate fechaNacimiento;
     private Long expiresIn;
 }

@@ -60,8 +60,12 @@ public class ServicioAuth {
                 .nombre(usuario.getNombre())
                 .email(usuario.getEmail())
                 .rol(usuario.getRol())
+                .cupon(usuario.getCupon())
+                .fechaNacimiento(usuario.getFechaNacimiento())
                 .expiresIn(jwtExpiration)
                 .build();
+
+
 
         } catch (BadCredentialsException e) {
             throw new RuntimeException("Email o contraseña incorrectos");
