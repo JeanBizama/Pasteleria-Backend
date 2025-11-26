@@ -46,8 +46,7 @@ public class Usuario implements UserDetails {
     @Size(min = 2, max = 100, message = "El nombre debe tener entre 2 y 100 caracteres")
     @Column(name = "nombre_usuario", nullable = false)
     private String nombre;
-    
-    @JsonIgnore
+
     @NotBlank(message = "La contraseña es obligatoria")
     @Column(name = "contrasena_usuario", nullable = false)
     private String contrasena;
